@@ -1,0 +1,37 @@
+{
+    "/home": {
+        "controller": "Musics",
+        "method": "index",
+        "action": "get"
+    },
+    "/home/about": {
+        "controller": "Musics",
+        "method": "about",
+        "action": "get"
+    },
+    "/users/": {
+        "controller": "Users",
+        "method": "index",
+        "action": "get"
+    },
+    "/user/:id": [
+        "Users", 
+        {
+            "method": "show",
+            "action": "get"
+        },
+        {
+            "method": "delete",
+            "action": "delete"
+        },
+        {
+            "method": "update",
+            "action": "put"
+        }
+    ],
+    "/user/:id/edit": [
+        "Users",
+        "edit",
+        "get"
+    ]
+}
